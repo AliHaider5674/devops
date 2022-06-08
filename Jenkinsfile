@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sample 'ahmad'
+                    sample 
                 }
             }
         }
