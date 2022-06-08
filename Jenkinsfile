@@ -1,4 +1,4 @@
-#!/usr/bin/env groovy
+@Library('my-shared-library')_
 
 pipeline {
 
@@ -12,8 +12,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                sh 'npm install'
+                script {
+                    commonFunctions 'ali'
+                }
             }
         }
     }
