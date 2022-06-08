@@ -1,4 +1,4 @@
-@Library('my-shared-library')_
+@Library('my-shared-library2')_
 
 pipeline {
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    commonFunctions 'ali'
+                    commonFunctions 'ahmad'
                 }
             }
         }
